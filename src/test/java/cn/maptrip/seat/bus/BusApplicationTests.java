@@ -34,4 +34,9 @@ public class BusApplicationTests {
         studentMapper.insertSelective(student);
     }
 
+    @Test
+    public void test02(){
+        System.out.println(444);
+    }
+
 }
