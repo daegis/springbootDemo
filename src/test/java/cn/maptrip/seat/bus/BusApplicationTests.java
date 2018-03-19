@@ -22,9 +22,7 @@ public class BusApplicationTests {
     @Test
     public void contextLoads() {
         List<Student> all = studentMapper.getAll();
-        all.stream().forEach(student -> {
-            System.out.println(JSON.toJSONString(student));
-        });
+        all.forEach(student -> System.out.println(JSON.toJSONString(student)));
     }
 
     @Test
